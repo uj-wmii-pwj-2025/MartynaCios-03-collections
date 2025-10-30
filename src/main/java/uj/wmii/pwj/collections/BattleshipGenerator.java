@@ -5,7 +5,7 @@ public interface BattleshipGenerator {
     String generateMap();
 
     static BattleshipGenerator defaultInstance() {
-        return null;
+        return new BattleshipGeneratorImpl();
     }
 
 }
